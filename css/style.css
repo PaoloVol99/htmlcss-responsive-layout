@@ -39,8 +39,18 @@ a {
 /* Container */
 
 .container {
-    max-width: 1140px;
+    max-width: 1204px;
+}
+
+.container-small {
+    max-width: 944px;
+
+}
+
+.container,
+.container-small {
     margin: 0 auto;
+    padding: 0 32px;
 }
 
 
@@ -59,15 +69,16 @@ a {
     flex-wrap: wrap;
 }
 
-.row-sec-1 {
+.gutter {
     margin: 0 -12px;
+    row-gap: 24px;
 }
 
 /* Header */
 
 .main-header {
     background-color: var(--blue);
-    padding: 20px 32px;
+    padding: 20px 0;
     color: white;
 }
 
@@ -119,7 +130,7 @@ nav .hamburger {
 /* Section 1 - Hero */
 
 .sec-1{
-    padding: 50px 0 80px;
+    padding: 50px 0 105px;
 }
 
 .card {
@@ -130,12 +141,10 @@ nav .hamburger {
 }
 
 .card-big-content {
-    display: flex;
     font-weight: 600;
 }
 
 .card-content {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
@@ -163,11 +172,11 @@ nav .hamburger {
 
 [class^="col-"] {
     padding: 0 12px;
-    margin-bottom: 24px;
 }
 
 .text {
     flex-basis: 50%;
+    padding-bottom: 35px;
 }
 
 .text-content {
@@ -184,6 +193,8 @@ nav .hamburger {
 
 .image img {
     display: block;
+    max-width: 260px;
+    margin: 0 auto;
 }
 
 .button__blue {
@@ -200,34 +211,105 @@ nav .hamburger {
 
 /* MediaQuery - Hero */
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 991px) {
 
-    .container {
-        max-width: 746px;
-    }
-
-    .card-big-content {
-        flex-wrap: wrap;
-    }
+    /* .container {
+        max-width: 928px;
+    } */
 
     .text {
         flex-basis: 100%;
-        margin-bottom: 35px;
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 575px) {
 
     .sec-1 [class^="col-"] {
         flex-basis: 100%;
     }
 
-    .container {
-        max-width: 311px;
-    }
+    /* .container {
+        max-width: 511px;
+    } */
 
     .image {
         flex-basis: 100%;
+    }
+
+}
+
+.sec-2 {
+    background-color: var(--purple);
+    padding: 125px 0 60px;
+}
+
+.sec-2 .row {
+    gap: 60px;
+}
+
+.sec-2 .col {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.sec-2 .align-end {
+    align-self: flex-end;
+}
+
+.card-white {
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 40px;
+    gap: 15px;
+}
+
+.button__circle {
+    background-color: var(--purple);
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    line-height: 50px;
+}
+
+.card-white p {
+    font-style: italic;
+}
+
+.card-white img {
+    width: 70%;
+    display: block;
+}
+
+.sec-2 .planning__img {
+    margin: 0 auto;
+    display: block;
+}
+
+.sec-2 .planning__title {
+    margin: 100px 0 50px
+}
+
+.sec-2 .col:first-child {
+    color: white;
+}
+
+.sec-2 p {
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+@media screen and (max-width: 991px) {
+
+    .sec-2 .col {
+        flex-basis: 100%;
+    }
+
+    .sec-2 .planning__title {
+        font-size: 58px;
     }
 
 }
