@@ -601,6 +601,84 @@ nav .hamburger {
     }
 }
 
+.sec-6 {
+    background-color: var(--purple);
+    padding: 60px 0;
+}
 
+.get-started {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+}
 
+.get-started h4 {
+    font-weight: 200;
+}
+
+.size-42 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.yellow-text {
+    color: var(--yellow);
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.get-started p {
+    display: block;
+    max-width: 470px;
+    line-height: 1.7em;
+}
+
+.get-started .button__white {
+    line-height: 70px;
+    padding: 0 80px;
+    color: var(--purple);
+}
+
+.copyright a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 575px) {
+
+    .size-42 {
+        font-size: 30px;
+    }
+
+    .yellow-text {
+        font-size: 48px;
+    }
+
+}
+
+.main-footer {
+    color: white;
+    background-color: var(--dark);
+    padding: 42px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-wrapper p {
+    display: block;
+    max-width: 470px;
+}
+
+.footer-wrapper p a {
+    color: var(--purple);
+    text-decoration: underline;
+}
 
