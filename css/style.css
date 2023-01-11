@@ -47,8 +47,13 @@ a {
 
 }
 
+.container-medium {
+    max-width: 1112px;
+}
+
 .container,
-.container-small {
+.container-small,
+.container-medium {
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -158,7 +163,6 @@ nav .hamburger {
 }
 
 .card-paragraph {
-    color: #3b3b3b;
     line-height: 1.7em;
 }
 
@@ -170,7 +174,7 @@ nav .hamburger {
     flex-basis: calc((100% / 3) * 2);
 }
 
-[class^="col-"] {
+.sec-1 [class^="col-"] {
     padding: 0 12px;
 }
 
@@ -444,6 +448,11 @@ nav .hamburger {
     margin-bottom: 70px;
 }
 
+.benefits-paragraph {
+    line-height: 1.7em;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 991px) {
     .sec-4 .col-33 {
        flex-basis: 50%;
@@ -467,3 +476,131 @@ nav .hamburger {
         font-size: 60px;
     }
 }
+
+.sec-5 {
+    padding: 95px 0 150px;
+}
+
+.about-staff {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sec-5 .row {
+    justify-content: space-between;
+    gap: 8%;
+}
+
+.about-img-wrapper {
+    border-radius: 50%;
+    width: 100%;
+    display: block;
+    min-width: 180px;
+}
+
+.about-img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sec-5 .col-70 {
+    flex-basis: 60%;
+}
+
+.sec-5 .col-30 {
+    width: 270px;
+    flex-shrink: 0;
+}
+
+.sec-5 .quote {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    font-size: 70px;
+    color: var(--purple);
+}
+
+.staff-wrapper {
+    position: relative;
+}
+
+.about-staff p {
+    font-size: 26px;
+    color: var(--purple);
+    font-weight: 800;
+}
+
+.about-staff .button__purple {
+    padding: 0 30px;
+}
+
+.about-text h2 {
+    font-size: 80px;
+    color: var(--purple);
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 2.5em;
+}
+
+@media screen and (max-width: 991px) {
+
+    .sec-5 .col-30 {
+        flex-basis: 32%;
+        flex-shrink: 1;
+    }
+
+    .about-img-wrapper {
+        border-radius: 50%;
+        width: 100%;
+        display: block;
+        min-width: 160px;
+    }
+    .sec-5 .quote {
+        font-size: 66px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .sec-5 .col-30 {
+        flex-basis: 100%;
+    }
+    .sec-5 .col-70 {
+        flex-basis: 100%;
+    }
+
+    .sec-5 .row {
+        gap: 55px;
+    }
+
+    .about-img-wrapper {
+        border-radius: 50%;
+        width: 100%;
+        display: block;
+        max-width: 180px;
+    }
+
+    .about-text h2 {
+        font-size: 50px;
+    }
+
+    .sec-5 .quote {
+        font-size: 50px;
+    }
+}
+
+
+
+
