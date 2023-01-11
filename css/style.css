@@ -159,7 +159,7 @@ nav .hamburger {
 
 .card-paragraph {
     color: #3b3b3b;
-    line-height: 30px;
+    line-height: 1.7em;
 }
 
 .col-33 {
@@ -311,5 +311,88 @@ nav .hamburger {
     .sec-2 .planning__title {
         font-size: 58px;
     }
+
+}
+
+.sec-3 {
+    padding: 64px 0 110px;
+}
+
+.testimonial-text h4 {
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.testimonial-text h2 {
+    margin-bottom: 35px;
+    font-size: 40px;
+    color: var(--purple);
+}
+
+.testimonial-text p {
+    margin-bottom: 50px;
+}
+
+.sec-3 .row > .col {
+    margin-bottom: 32px;
+}
+
+.sec-3 .row > .col:last-child {
+    margin-bottom: 0px;
+}
+
+.sec-3 .row > .col:first-child {
+    margin-bottom: 0px;
+}
+
+.testimonial-text {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.card-purple {
+    background-color: var(--purple);
+    border-radius: 45px;
+    display: flex;
+    padding: 30px 18px 40px;
+    color: white;
+    align-items: center;
+}
+
+.sec-3 .card-purple figure{
+    flex-shrink: 0;
+    margin-right: 60px;
+}
+
+.card-purple img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.card-purple p {
+    line-height: 1.7em;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 575px) {
+
+    .sec-3 .card-purple {
+        flex-wrap: wrap;
+        padding: 32px 18px 32px;
+    }
+
+    .sec-3 .card-purple figure{
+        margin: 0 auto;
+    }
+
+
+    .sec-3 .card-purple .testimonial-quote{
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
 
 }
